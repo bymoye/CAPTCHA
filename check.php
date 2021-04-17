@@ -1,8 +1,8 @@
 <?php include('./CAPTCHA.php');
 $test = new CAPTCHA();
-echo $_SESSION["timestamp"];
+echo $_COOKIE["timestamp"]??null;
 $message = null;
-if(isset($_SESSION["timestamp"]) && isset($_POST['yzm'])){
+if(isset($_COOKIE["timestamp"]) && !empty($_POST['yzm']) && isset($_COOKIE["id"])){
     $message =  $test->check_CAPTCHA($_POST['yzm']);
 }
 $test2 = $test->create_captcha_img();
