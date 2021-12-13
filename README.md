@@ -1,3 +1,5 @@
+# 该库已并入[CAPTCHA](https://github.com/bymoye/Sakura/blob/master/inc/classes/CAPTCHA.php) 后续不再维护
+
 # CAPTCHA
 本仓库用来存储测试验证码
 
